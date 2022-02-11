@@ -2,12 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import Navegacao from '../components/Navegacao'
 
 export default function Home() {
   return (
     <>
-    <Navegacao />
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
@@ -19,8 +17,8 @@ export default function Home() {
           <a href="#">siga-me nas redes sociais</a>.)
         </p>
       </section>
-      <Link href="/first-post">
-        <a>Ir para First-Post</a>
+      <Link href="/sobre">
+        <a>Ir para a página Sobre</a>
       </Link>
     </Layout>
     </>
